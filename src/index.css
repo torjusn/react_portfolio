@@ -1,13 +1,57 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aleo&display=swap');
+
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/*
+* {
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+  color: #393c41;
+  margin: 0;
+  padding: 0;
+}
+*/
+
+body {
+  width: 100%;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #fffc;
+  ;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  /*width: 100%;*/
+  width: calc(100% - 20px);
+  transform: scaleX(0);
+  height: 2px;
+  /*bottom: 0;*/
+  top: calc(100% + 4px);
+  left: 0;
+  background-color: #fffc;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  margin: 0 10px;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
