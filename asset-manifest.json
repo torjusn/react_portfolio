@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react_portfolio/static/css/main.df0e9e23.css",
-    "main.js": "/react_portfolio/static/js/main.5f3c73ed.js",
+    "main.js": "/react_portfolio/static/js/main.c65acced.js",
     "static/js/787.5c39024c.chunk.js": "/react_portfolio/static/js/787.5c39024c.chunk.js",
     "static/media/circuit_darken.jpg": "/react_portfolio/static/media/circuit_darken.15a49ebf91daef3ada7f.jpg",
     "static/media/nordic_screener.png": "/react_portfolio/static/media/nordic_screener.18bcfd7127c2b94c42a4.png",
@@ -11,11 +11,11 @@
     "static/media/github2.png": "/react_portfolio/static/media/github2.76e52eebc1fa65a0d36c.png",
     "index.html": "/react_portfolio/index.html",
     "main.df0e9e23.css.map": "/react_portfolio/static/css/main.df0e9e23.css.map",
-    "main.5f3c73ed.js.map": "/react_portfolio/static/js/main.5f3c73ed.js.map",
+    "main.c65acced.js.map": "/react_portfolio/static/js/main.c65acced.js.map",
     "787.5c39024c.chunk.js.map": "/react_portfolio/static/js/787.5c39024c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.df0e9e23.css",
-    "static/js/main.5f3c73ed.js"
+    "static/js/main.c65acced.js"
   ]
 }
