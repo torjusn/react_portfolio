@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2d53c113.css",
-    "main.js": "/static/js/main.0f39ba61.js",
+    "main.js": "/static/js/main.84e4d269.js",
     "static/js/787.5c39024c.chunk.js": "/static/js/787.5c39024c.chunk.js",
     "static/media/circuit_darken.jpg": "/static/media/circuit_darken.15a49ebf91daef3ada7f.jpg",
     "static/media/nordic_screener.png": "/static/media/nordic_screener.18bcfd7127c2b94c42a4.png",
@@ -12,11 +12,11 @@
     "static/media/github2.png": "/static/media/github2.76e52eebc1fa65a0d36c.png",
     "index.html": "/index.html",
     "main.2d53c113.css.map": "/static/css/main.2d53c113.css.map",
-    "main.0f39ba61.js.map": "/static/js/main.0f39ba61.js.map",
+    "main.84e4d269.js.map": "/static/js/main.84e4d269.js.map",
     "787.5c39024c.chunk.js.map": "/static/js/787.5c39024c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2d53c113.css",
-    "static/js/main.0f39ba61.js"
+    "static/js/main.84e4d269.js"
   ]
 }
