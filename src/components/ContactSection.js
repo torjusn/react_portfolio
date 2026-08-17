@@ -1,10 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
-import { Lottie } from "lottie-react";
 import Background from "../assets/circuit_darken.jpg";
 import SomeCode from "../assets/some_code.png";
-import animationData from "../assets/face_recognition_blue.json";
+import FaceAnimation from "../assets/face_recognition_blue.svg";
 
 function ContactSection() {
   return (
@@ -31,11 +30,10 @@ function ContactSection() {
         </Fade>
       </Description>
       <Anime>
-        <Lottie
-          animationData={animationData}
-          loop
-          autoplay
-          style={{ width: 250, height: 250 }}
+        <AnimatedObject
+          data={FaceAnimation}
+          type="image/svg+xml"
+          aria-label="animated hero graphic"
         />
       </Anime>
     </Container>
@@ -107,7 +105,19 @@ const Anime = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 290px;
+  height: 290px;
   @media (max-width: 768px) {
-    display: none;
+    display: flex;
+    order: 1;
+    margin-top: 20px;
+    width: 220px;
+    height: 220px;
   }
+`;
+
+const AnimatedObject = styled.object`
+  width: 100%;
+  height: 100%;
+  border: 0;
 `;
