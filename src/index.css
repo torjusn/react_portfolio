@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aleo&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+/*
+* {
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+  color: #393c41;
+  margin: 0;
+  padding: 0;
+}
+*/
+
+body {
+  width: 100%;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #fffc;
+  ;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  /*width: 100%;*/
+  width: calc(100% - 20px);
+  transform: scaleX(0);
+  height: 2px;
+  /*bottom: 0;*/
+  top: calc(100% + 4px);
+  left: 0;
+  background-color: #fffc;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  margin: 0 10px;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
