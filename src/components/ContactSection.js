@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
 import Background from "../assets/circuit_darken.jpg";
-import SomeCode from "../assets/timeseries.png";
+import SomeCode from "../assets/some_code.png";
 
 function ContactSection() {
   return (
