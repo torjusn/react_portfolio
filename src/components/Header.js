@@ -20,13 +20,13 @@ function Header() {
         </Logo>
       </a>
       <Menu>
-        <p class="hover-underline-animation">
+        <p className="hover-underline-animation">
           <a href="#stock-crawler">Stock Crawler</a>{" "}
         </p>
-        <p class="hover-underline-animation">
+        <p className="hover-underline-animation">
           <a href="#study-group">Study Group</a>{" "}
         </p>
-        <p class="hover-underline-animation">
+        <p className="hover-underline-animation">
           <a href="#nordic-screener">Nordic Screener</a>{" "}
         </p>
       </Menu>
@@ -60,6 +60,13 @@ const Container = styled.div`
   z-index: 10;
   color: #fffc;
   backdrop-filter: blur(20px);
+
+  a,
+  a:visited,
+  a:hover,
+  a:active {
+    color: #fffc;
+  }
 `;
 
 const Logo = styled.div`

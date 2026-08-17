@@ -22,7 +22,7 @@ function ContactSection() {
           <a href="mailto:torjus.tech@gmail.com">
             <button
               onClick={() => (window.location = "mailto:torjus.tech@gmail.com")}
-              class="btn-hover color-9"
+              className="btn-hover color-9"
             >
               CONTACT ME
             </button>

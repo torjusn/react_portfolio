@@ -25,7 +25,7 @@ function ContactSection() {
           </p>
 
           <a target="_blank" href="https://github.com/torjusn/nordic_screener">
-            <button class="btn-hover color-9">VIEW ON GITHUB</button>
+            <button className="btn-hover color-9">VIEW ON GITHUB</button>
           </a>
         </Fade>
       </Description>
