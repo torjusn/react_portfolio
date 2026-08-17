@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import GithubIcon from "../assets/github2.png";
 import LinkedInIcon from "../assets/linkedin2.png";
-import ProfileImage from "../assets/profile.jpeg";
 {
   /*torjus.ai*/
 }
@@ -12,7 +11,11 @@ function Header() {
     <Container>
       <a href="#">
         <Logo>
-          <img src={ProfileImage} style={{ height: "1em", borderRadius: 5 }} />
+          <img
+            src={`${process.env.PUBLIC_URL}/favicon.ico?v=20260817`}
+            alt="adjustai icon"
+            style={{ height: "1em", borderRadius: 5 }}
+          />
           adjustai.net
         </Logo>
       </a>

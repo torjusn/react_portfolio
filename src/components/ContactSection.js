@@ -1,8 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
+import { Lottie } from "lottie-react";
 import Background from "../assets/circuit_darken.jpg";
 import SomeCode from "../assets/some_code.png";
+import animationData from "../assets/face_recognition_blue.json";
 
 function ContactSection() {
   return (
@@ -29,7 +31,12 @@ function ContactSection() {
         </Fade>
       </Description>
       <Anime>
-        <PulseOrb />
+        <Lottie
+          animationData={animationData}
+          loop
+          autoplay
+          style={{ width: 250, height: 250 }}
+        />
       </Anime>
     </Container>
   );
@@ -102,29 +109,5 @@ const Anime = styled.div`
   justify-content: center;
   @media (max-width: 768px) {
     display: none;
-  }
-`;
-
-const PulseOrb = styled.div`
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  background: radial-gradient(circle at 30% 30%, #67d6ff, #1f5f8b 60%, #0f2d44);
-  box-shadow: 0 0 40px rgba(103, 214, 255, 0.35);
-  animation: pulse 2.2s ease-in-out infinite;
-
-  @keyframes pulse {
-    0% {
-      transform: scale(0.95);
-      box-shadow: 0 0 30px rgba(103, 214, 255, 0.3);
-    }
-    50% {
-      transform: scale(1.05);
-      box-shadow: 0 0 60px rgba(103, 214, 255, 0.55);
-    }
-    100% {
-      transform: scale(0.95);
-      box-shadow: 0 0 30px rgba(103, 214, 255, 0.3);
-    }
   }
 `;
