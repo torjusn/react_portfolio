@@ -14,7 +14,7 @@ function ContactSection() {
           <h1>Hi, I'm Torjus</h1>
 
           <p>
-            I'm a Data Scientist in Machine Learning. Some of my current side
+            I'm a Data Engineer, and this is my homepage. Some of my side
             projects involve programming, study groups and stock-/timeseries
             analysis.
           </p>
