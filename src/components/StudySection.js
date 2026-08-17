@@ -5,7 +5,7 @@ import Study from "../assets/study.jpg";
 
 function StudySection() {
   return (
-    <Container>
+    <Container id="study-group">
       <Tableholder>
         <Table>
           <Title> Schedule Spring 2023 </Title>
@@ -15,19 +15,32 @@ function StudySection() {
             <Program> Program </Program>
           </Subtitle>
           <Row>
-            <StudyDate> 25.3 </StudyDate>
+            <StudyDate> 13.01.23 </StudyDate>
             <Speaker>Torjus</Speaker>
-            <Program> React.js</Program>
+            <Program> Kickoff Spring 23' </Program>
           </Row>
           <Row>
-            <StudyDate> 7.4</StudyDate>
-            <Speaker>Christian</Speaker>
-            <Program> Reinforcement Learning </Program>
-          </Row>
-          <Row>
-            <StudyDate> 21.4</StudyDate>
+            <StudyDate> 27.01.23 </StudyDate>
             <Speaker>Markus</Speaker>
-            <Program> TBA </Program>
+            <Program> Workflow management tools</Program>
+          </Row>
+          <Row>
+            <StudyDate> 25.03.23 </StudyDate>
+            <Speaker>Torjus</Speaker>
+            <Program> Building a webpage with React.js and Node.js</Program>
+          </Row>
+          <Row>
+            <StudyDate> 07.04.23 </StudyDate>
+            <Speaker>Christian</Speaker>
+            <Program> Introduction to ML and Reinforcement Learning </Program>
+          </Row>
+          <Row>
+            <StudyDate> 21.04.23 </StudyDate>
+            <Speaker>Markus</Speaker>
+            <Program>
+              {" "}
+              How to calculate faster than a calculator: Mental Arithmetics
+            </Program>
           </Row>
         </Table>
       </Tableholder>
@@ -64,7 +77,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  gap: 100px;
+  gap: 0 100px;
   background-size: cover;
   background-image: url(${Study});
 `;
@@ -84,7 +97,7 @@ const Description = styled.div`
       right: 0;
       height: 10px;
       background-image: linear-gradient(90deg, #394450, #08f);
-      border-radius: 5px;
+      border-radius: 2px;
     }
   }
 
@@ -106,24 +119,29 @@ const Image = styled.img`
 const Tableholder = styled.div``;
 
 const Table = styled.div`
-  /*
-  display: flex;
-  flex-direction: column;
-  */
   background-color: #394450;
   height: 512px;
-  width: 400px;
+  width: 100%; /*400px*/
+  max-width: 640px;
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: stretch;
   border-radius: 25px;
   opacity: 0.85;
   font-size: 16px;
+  padding-top: 20px;
+  text-align: left;
+  padding-left: 10px;
 `;
 
-const Title = styled.div``;
+const Title = styled.div`
+  font-weight: 100;
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+`;
 
 const Row = styled.div`
   display: flex;
@@ -131,22 +149,23 @@ const Row = styled.div`
 `;
 
 const StudyDate = styled.div`
-  flex: 1;
-  color: red;
+  flex: 0 0 100px;
 `;
 
 const Subtitle = styled(Row)`
-  ${StudyDate} {
-    color: blue;
-  }
+  font-weight: 40;
+  font-size: 20px;
+  margin-bottom: 5px;
 `;
 
 const Speaker = styled.div`
-  flex: 1;
+  flex: 0 0 100px;
 `;
 
 const Program = styled.div`
   flex: 1;
 `;
 
-const TextBox = styled.div``;
+const TextBox = styled.div`
+  padding: 0px 20px;
+`;

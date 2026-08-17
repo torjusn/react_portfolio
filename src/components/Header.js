@@ -2,8 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import GithubIcon from "../assets/github2.png";
 import LinkedInIcon from "../assets/linkedin2.png";
-import nordicImage from "../assets/etl_flowchart.png";
-
+import ProfileImage from "../assets/profile.jpeg";
 {
   /*torjus.ai*/
 }
@@ -12,25 +11,28 @@ function Header() {
   return (
     <Container>
       <a href="#">
-        <Logo>adjustai.net</Logo>
+        <Logo>
+          <img src={ProfileImage} style={{ height: "1em", borderRadius: 5 }} />
+          adjustai.net
+        </Logo>
       </a>
       <Menu>
         <p class="hover-underline-animation">
-          <a href="#">Study Group</a>{" "}
+          <a href="#stock-crawler">Stock Crawler</a>{" "}
         </p>
         <p class="hover-underline-animation">
-          <a href="#">Nordic Screener</a>{" "}
+          <a href="#study-group">Study Group</a>{" "}
         </p>
         <p class="hover-underline-animation">
-          <a href="#">Stock crawler</a>{" "}
+          <a href="#nordic-screener">Nordic Screener</a>{" "}
         </p>
       </Menu>
       <Icons>
-        <a href="https:/github.com/torjusn">
+        <a target="_blank" href="https://github.com/torjusn">
           {" "}
           <img alt="Git" src={GithubIcon} width="32" height="32" />{" "}
         </a>
-        <a href="https://www.linkedin.com/in/torjus-nilsen/">
+        <a target="_blank" href="https://www.linkedin.com/in/torjus-nilsen/">
           {" "}
           <img alt="Linked" src={LinkedInIcon} width="32" height="32" />{" "}
         </a>
@@ -47,6 +49,7 @@ const Container = styled.div`
   background-color: #0008;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 0 20px;
   top: 0;
   left: 0;
@@ -57,6 +60,9 @@ const Container = styled.div`
 `;
 
 const Logo = styled.div`
+  gap: 10px;
+  display: flex;
+  align-items: center;
   font-family: "Lato", sans-serif;
   font-weight: 600;
   font-size: 32px;
@@ -83,6 +89,10 @@ const Menu = styled.div`
     font-weight: 600;
     padding: 0 10px;
     flex-wrap: no-wrap;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
   }
 `;
 
