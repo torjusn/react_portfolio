@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+### `npm run deploy to deploy directly to branch`
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
